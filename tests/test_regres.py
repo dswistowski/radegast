@@ -1,7 +1,6 @@
 import pytest
 
-from examples.reqres import ReqRes
-from examples.reqres import UserDetail
+from examples.reqres import ReqRes, User, UserDetail
 
 
 @pytest.fixture

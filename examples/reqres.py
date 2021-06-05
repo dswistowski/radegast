@@ -25,7 +25,7 @@ class Ad:
 @dataclass
 class UserDetail:
     data: User
-    ad: Ad
+    ad: Optional[Ad] = None
 
 
 @dataclass
@@ -45,4 +45,4 @@ class UsersParams:
 
 class ReqRes(Radegast, base_url="https://reqres.in/api/"):
     users: get(Users, UsersParams)
-    user: get(UserDetail).for_path("/users/{id}/")
+    user: get(UserDetail).for_path("users/{id}")
