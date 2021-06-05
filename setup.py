@@ -9,7 +9,7 @@ with open("README.rst") as readme_file:
 with open("HISTORY.rst") as history_file:
     history = history_file.read()
 
-requirements = []
+requirements = ["requests>=2.24.0,<3.0.0", "svarog>=0.1.4,<1.0.0"]
 
 setup_requirements = [
     "pytest-runner",
@@ -22,14 +22,13 @@ test_requirements = [
 setup(
     author="Damian Świstowski",
     author_email="damian@swistowski.org",
-    python_requires=">=3.7",
+    python_requires=">=3.8",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Natural Language :: English",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
