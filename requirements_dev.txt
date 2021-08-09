@@ -4,7 +4,7 @@ coverage==5.5
 flake8==3.9.2
 mypy==0.910
 pip==21.2.3
-pre-commit==2.13.0
+pre-commit==2.14.0
 
 pytest==6.2.4
 pytest-runner==5.3.1
